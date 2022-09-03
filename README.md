@@ -2,6 +2,7 @@
 ### Using: Linux Virtual Machine, Docker, Dockerhub, Github & Python (Flask Application).
 #### The Documentation of Building my Pipeline Excludes Installation of the Technologies Used for Simplicity (Installing VM, Docker, Python)
 #### For a more Concise, Illustrated Documentation of my Pipeline - https://aidensprojects.github.io/project2.html
+#### Prerequisites, other than the Technologies listed before, you will also need a Docker Account, and to log into that account in the VM.
 
 #### ㅤ
 #### ❓ Why use a Virtual Machine:
@@ -31,4 +32,14 @@
 - **🔌 Jenkins: Add Credentials -> Add SSH Username and Private Key**
 - your_ip:8080/job/ssh-keys-testing/pipeline-syntax/  -> Generate Pipeline Script  -> Copy
 - your_ip:8080/job/ssh-keys-testing/configure  -> Paste  (where is says "// some block")
-<br>
+
+#### ㅤ
+- **🔨 Pipeline Stages:**
+- **Copy and Paste - From Repository (Pipeline-Script.txt\) to Pipeline Script (your_ip:8080/job/Python-Pipeline/configure)**
+- **^^ The IP in Pipeline-Script.txt is a random ip, just for demonstration purposes.**
+- ** Run the Pipeline**
+
+#### ㅤ
+- **🏆 Check if Pipeline has Pushed to Github:**
+- **Go to your Github Repository (https://github.com/AidensProjects/CI-CD-Pipeline-w-Jenkins) and add a Dumby File, make sure to add text**
+- **Go to your Pipeline (your_ip:8080/job/Python-Pipeline/) and a New Stage should be added showing that the Pipeline is working.**
