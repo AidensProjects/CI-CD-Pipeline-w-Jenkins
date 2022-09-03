@@ -11,10 +11,13 @@
 
 #### ㅤ
 ### 🔩 Building the Pipeline:
-- **Building Docker Image - via Dockerfile**
+- **⚙️ Building Docker Image - via Dockerfile**
 - **Port Forwarding: Running Docker Image mapping port to localhost:5000 via docker run -d -p 5000:5000 mypyapp:0.1**
-- **Allowing Jenkins Users to Access Docker Socket - Prevents Permission Denied Error**
-- **(sudo usermod -aG docker jenkins) (sudo systemctl restart jenkins)**
+
+#### ㅤ
+- **✔️ Allowing Jenkins Users to Access Docker Socket - Prevents Permission Denied Error**
+- **root@user:~# "sudo usermod -aG docker jenkins"**
+- **root@user:~# "sudo systemctl restart jenkins"**
 
 #### ㅤ
 - **💻 Jenkins Plugins, Install:**
@@ -22,7 +25,10 @@
 - **SSH Agent Plugin**
 
 #### ㅤ
-- **🔑 Generating SSH Key:**
-- **"ssh-keygen"**
-- **SSH Agent Plugin**
+- **🔑 Generating SSH Key, Type in Console:**
+- **root@user:~# "ssh-keygen"**
+- **root@user:~# "cat id_rsa.pub >>authorized_keys"**
+- **🔌 Jenkins: Add Credentials -> Add SSH Username and Private Key**
+- your_ip:8080/job/ssh-keys-testing/pipeline-syntax/  -> Generate Pipeline Script  -> Copy
+- your_ip:8080/job/ssh-keys-testing/configure  -> Paste  (where is says "// some block")
 <br>
