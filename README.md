@@ -15,8 +15,14 @@
 - **Port Forwarding: Running Docker Image mapping port to localhost:5000 via docker run -d -p 5000:5000 mypyapp:0.1**
 - **Allowing Jenkins Users to Access Docker Socket - Prevents Permission Denied Error**
 - **(sudo usermod -aG docker jenkins) (sudo systemctl restart jenkins)**
+
 #### ㅤ
-- **Jenkins Plugins, Install:**
+- **💻 Jenkins Plugins, Install:**
 - **CloudBess Docker Build and Publish Plugin**
+- **SSH Agent Plugin**
+
+#### ㅤ
+- **🔑 Generating SSH Key:**
+- **"ssh-keygen"**
 - **SSH Agent Plugin**
 <br>
